@@ -922,8 +922,108 @@ footer .container {
     }
 
     /* ***********************shop end************************* */
+    
+    footer .raw {
+        flex-wrap: wrap;
+    }
+
+    footer .col {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .end-of-footer {
+        justify-content: flex-end;
+    }
+
+    .end-of-footer p { 
+        display: none;
+    }
 
 
+}
+    /* ||||||||||||||||||shape||||||||||||||||| */
+@media screen and (min-width: 630px) and (max-width: 768px) {
+
+    .yellow-item:hover:before {
+        content: " ";
+        display: inline-block;
+        height: 80px;
+        width: 1px;
+        background: gray;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -4px;
+        left: 39px;
+    
+    }
+    .yellow-item:hover:after {
+        content: " ";
+        display: inline-block;
+        height: 1px;
+        width: 144px;
+        background: gray;
+        position: absolute;
+        bottom: 64px;
+        left: 68px;
+    }
+
+}
+@media screen and (min-width: 480px) and (max-width: 630px) {
+    
+    .yellow-item:hover:before {
+        content: " ";
+        display: inline-block;
+        height: 49px;
+        width: 1px;
+        background: gray;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: 1px;
+        left: 27px;
+    }
+
+    .yellow-item:hover:after {
+        content: " ";
+        display: inline-block;
+        height: 1px;
+        width: 144px;
+        background: gray;
+        position: absolute;
+        bottom: 43px;
+        left: 45px;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 480px) {
+    
+    .yellow-item:hover:before {
+        content: " ";
+        display: inline-block;
+        height: 26px;
+        width: 1px;
+        background: gray;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: 3px;
+        left: 20px;
+    }
+
+    .yellow-item:hover:after {
+        content: " ";
+        display: inline-block;
+        height: 1px;
+        width: 133px;
+        background: gray;
+        position: absolute;
+        bottom: 24px;
+        left: 29px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .view-product {
+        display: none;
+    }
 }
 
 
