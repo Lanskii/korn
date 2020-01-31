@@ -10,223 +10,228 @@
     Open+Sans:300|Roboto:100,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container-header">
-            <strong><a href="#" class="logo"><img src="/images/IbanezLogo.png" alt="Ibanez">
-            </a></strong>
-            <ul class="nav">
-                <li><a href="#">Гитары</a></li>
-                <li><a href="#">Педали эффектов</a></li>
-                <li><a href="#">Усилители</a></li>
-                <li><a href="#">Аксессуары</a></li>
-            </ul>
-            <div class="switch">
-               <input  id="RU" type="radio" value="RU" name="lang" checked>
-               <label for="RU">RU</label>
-               <input  id="EN" type="radio" value="EN" name="lang">
-               <label for="EN">EN</label>
-           </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="tiser">
-            <div class="container">
-                <div class="content">
-                    <h1 class="h1">Ограниченная серия гитары</h1>
-                    <img src="/images/K-7.png" alt="picture K-7">
-                    <a class="btn" href="#">Прикоснись к легенде</a>
-                </div>
+    <div class="wrapper">
+        <header class="header">
+            <button class="btn-open">
+                <img src="/images/menu.png" alt="button-open-menu">
+            </button> <!--я знаю, что так нельзя, позже переделаю на js -->
+            <div class="container-header">
+                <strong><a href="#" class="logo"><img src="/images/IbanezLogo.png" alt="Ibanez">
+                </a></strong>
+                <ul class="nav">
+                    <li><a href="#">Гитары</a></li>
+                    <li><a href="#">Педали эффектов</a></li>
+                    <li><a href="#">Усилители</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                </ul>
+                <div class="switch">
+                   <input  id="RU" type="radio" value="RU" name="lang" checked>
+                   <label for="RU">RU</label>
+                   <input  id="EN" type="radio" value="EN" name="lang">
+                   <label for="EN">EN</label>
+               </div>
             </div>
-        </div>
-        <div class="info-block">
-            <div class="container">
-                <h2 class="h1">"Head" о истории создании серии K-7</h2>
-                <div class="video"><img src="/images/Video.jpg" alt="video-brayan"></div>
-                <p class="about">Брайан "Head" Вэлш<br>учавствовал в 
-                    разработке серии.<br><span>Гитарист группы KoЯn</span></p>
-            </div>
-        </div>
-        <div class="view-product">
-            <div class="container">
-                <h2 class="h1">Технические<br>характеристики</h2>
-                <p class="text-md">Внешний вид гитары явно повторяет очертания<br> 
-                    самой массовой серии Ibanez - RG.<br> 
-                    Но внешнее сходство может быть<br> 
-                    весьма обманчиво,<br>когда дело касается звука.</p>
-                <div class="item-guitar">
-                  <img src="/images/guitar-tech.png" alt="guitar">
-                   <!-- start -->
-                  <div class="item-wraper item-positioner-1">
-                        <div class="yellow-item"></div> 
-                  </div>
-                  <p class="text-for-item text-positioner-1"><span class="first-text">Материал струны:</span><br>
-                    <span class="second-text">Мифрил</span></p>
-                    <!-- next -->
-                    <div class="item-wraper item-positioner-2">
-                        <div class="yellow-item"></div> 
-                  </div>
-                  <p class="text-for-item text-positioner-2"><span class="first-text">Материал корпуса:</span><br>
-                    <span class="second-text">Иггдрасиль</span class="second-text"></p>
-                    <!-- next -->
-                    <div class="item-wraper item-positioner-3">
-                        <div class="yellow-item"></div> 
-                  </div>
-                  <p class="text-for-item text-positioner-3"><span class="first-text">Для чего эта штука:</span><br>
-                    <span class="second-text">Я не помню</span class="second-text"></p>
-                    <!-- next -->
-                    <div class="item-wraper item-positioner-4">
-                        <div class="yellow-item"></div> 
-                  </div>
-                  <p class="text-for-item text-positioner-4"><span class="first-text">Материал грифа:</span><br>
-                    <span class="second-text">Балалейло</span class="second-text"></p>
-                    <!-- next -->
-                    <div class="item-wraper item-positioner-5">
-                        <div class="yellow-item"></div> 
-                  </div>
-                  <p class="text-for-item text-positioner-5"><span class="first-text">Материал колков:</span><br>
-                    <span class="second-text">Нано-углеродистая сталь</span class="second-text"></p>   
-                </div>
-            </div>
-        </div>
-        <div class="artists">
-            <div class="container">
-                <h2 class="h1">Мнения музыкантов о K7</h2>
-                <div class="raw">
-                    <!-- 1-col -->
-                    <div class="col">
-                        <img src="/images/artist-1.png" alt="Mick Tompson">
-                        <p class="col-text">Мик Томпсон
-                        <br><span class="dark-text">SlipKnot</span></p>
-                        <p class="col-text col-text-mod">
-                            Это моя первая 7-ми струнная гитара, 
-                            в ней я нашел все что мне нужно: 
-                            мощность и чистота звука, 
-                            качество материалов и агрессивный внешний вид.</p>
-                    </div>
-                    <!-- 2-col -->
-                    <div class="col">
-                        <img src="/images/artist-2.png" alt="Dino Cazares">
-                        <p class="col-text">Дино Казарес
-                        <br><span class="dark-text">Divine Heresy</span class="dark-text"></p>
-                        <p class="col-text col-text-mod">
-                            К7 — это чертовски круто, это ощутимые и рвущие «низа» и 
-                            чистота звука в «клине». Это именно то что мы любим 
-                            в Ibanez.</p>
-                    </div>
-                    <!-- 3-col -->
-                    <div class="col">
-                        <img src="/images/artist-3.png" alt="Jack Boven">
-                        <p class="col-text">Джейк Бовен
-                        <br><span class="dark-text">Periphery</span class="dark-text"></p>
-                        <p class="col-text col-text-mod">
-                            Я люблю гитары Ibanez, я всегда на них играл. К7 это легенда, 
-                            это новый стандарт неумирающей класики.</p>
-                    </div>
-                    <!-- 4-col -->
-                    <div class="col">
-                        <img src="/images/artist-4.png" alt="Jo Satriani">
-                        <p class="col-text">Джо Сатриани
-                        <br><span class="dark-text">Joe Satriani</span class="dark-text"></p>
-                        <p class="col-text col-text-mod">
-                            Я всю жизнь играл и любил рок-музыку. Но это всенгда были 6-ти 
-                            струнные гитары. 7-ми струнный К7 подарил ощутимые низкие частоты.</p>
+        </header>
+        <main class="main">
+            <div class="tiser">
+                <div class="container">
+                    <div class="content">
+                        <h1 class="h1">Ограниченная серия гитары</h1>
+                        <img src="/images/K-7.png" alt="picture K-7">
+                        <a class="btn" href="#">Прикоснись к легенде</a>
                     </div>
                 </div>
-                <div class="wraper-a">
-                <a class="col-text col-text-mod next" href="#">Далее >></a>
+            </div>
+            <div class="info-block">
+                <div class="container">
+                    <h2 class="h1">"Head" о истории создании серии K-7</h2>
+                    <div class="video"><img src="/images/Video.jpg" alt="video-brayan"></div>
+                    <p class="about">Брайан "Head" Вэлш<br>учавствовал в 
+                        разработке серии.<br><span>Гитарист группы KoЯn</span></p>
                 </div>
             </div>
-        </div>
-        <div class="shop">
+            <div class="view-product">
+                <div class="container">
+                    <h2 class="h1">Технические<br>характеристики</h2>
+                    <p class="text-md">Внешний вид гитары явно повторяет очертания<br> 
+                        самой массовой серии Ibanez - RG.<br> 
+                        Но внешнее сходство может быть<br> 
+                        весьма обманчиво,<br>когда дело касается звука.</p>
+                    <div class="item-guitar">
+                      <img src="/images/guitar-tech.png" alt="guitar">
+                       <!-- start -->
+                      <div class="item-wraper item-positioner-1">
+                            <div class="yellow-item"></div> 
+                      </div>
+                      <p class="text-for-item text-positioner-1"><span class="first-text">Материал струны:</span><br>
+                        <span class="second-text">Мифрил</span></p>
+                        <!-- next -->
+                        <div class="item-wraper item-positioner-2">
+                            <div class="yellow-item"></div> 
+                      </div>
+                      <p class="text-for-item text-positioner-2"><span class="first-text">Материал корпуса:</span><br>
+                        <span class="second-text">Иггдрасиль</span class="second-text"></p>
+                        <!-- next -->
+                        <div class="item-wraper item-positioner-3">
+                            <div class="yellow-item"></div> 
+                      </div>
+                      <p class="text-for-item text-positioner-3"><span class="first-text">Для чего эта штука:</span><br>
+                        <span class="second-text">Я не помню</span class="second-text"></p>
+                        <!-- next -->
+                        <div class="item-wraper item-positioner-4">
+                            <div class="yellow-item"></div> 
+                      </div>
+                      <p class="text-for-item text-positioner-4"><span class="first-text">Материал грифа:</span><br>
+                        <span class="second-text">Балалейло</span class="second-text"></p>
+                        <!-- next -->
+                        <div class="item-wraper item-positioner-5">
+                            <div class="yellow-item"></div> 
+                      </div>
+                      <p class="text-for-item text-positioner-5"><span class="first-text">Материал колков:</span><br>
+                        <span class="second-text">Нано-углеродистая сталь</span class="second-text"></p>   
+                    </div>
+                </div>
+            </div>
+            <div class="artists">
+                <div class="container">
+                    <h2 class="h1">Мнения музыкантов о K7</h2>
+                    <div class="raw">
+                        <!-- 1-col -->
+                        <div class="col">
+                            <img src="/images/artist-1.png" alt="Mick Tompson">
+                            <p class="col-text">Мик Томпсон
+                            <br><span class="dark-text">SlipKnot</span></p>
+                            <p class="col-text col-text-mod">
+                                Это моя первая 7-ми струнная гитара, 
+                                в ней я нашел все что мне нужно: 
+                                мощность и чистота звука, 
+                                качество материалов и агрессивный внешний вид.</p>
+                        </div>
+                        <!-- 2-col -->
+                        <div class="col">
+                            <img src="/images/artist-2.png" alt="Dino Cazares">
+                            <p class="col-text">Дино Казарес
+                            <br><span class="dark-text">Divine Heresy</span class="dark-text"></p>
+                            <p class="col-text col-text-mod">
+                                К7 — это чертовски круто, это ощутимые и рвущие «низа» и 
+                                чистота звука в «клине». Это именно то что мы любим 
+                                в Ibanez.</p>
+                        </div>
+                        <!-- 3-col -->
+                        <div class="col">
+                            <img src="/images/artist-3.png" alt="Jack Boven">
+                            <p class="col-text">Джейк Бовен
+                            <br><span class="dark-text">Periphery</span class="dark-text"></p>
+                            <p class="col-text col-text-mod">
+                                Я люблю гитары Ibanez, я всегда на них играл. К7 это легенда, 
+                                это новый стандарт неумирающей класики.</p>
+                        </div>
+                        <!-- 4-col -->
+                        <div class="col">
+                            <img src="/images/artist-4.png" alt="Jo Satriani">
+                            <p class="col-text">Джо Сатриани
+                            <br><span class="dark-text">Joe Satriani</span class="dark-text"></p>
+                            <p class="col-text col-text-mod">
+                                Я всю жизнь играл и любил рок-музыку. Но это всенгда были 6-ти 
+                                струнные гитары. 7-ми струнный К7 подарил ощутимые низкие частоты.</p>
+                        </div>
+                    </div>
+                    <div class="wraper-a">
+                    <a class="col-text col-text-mod next" href="#">Далее >></a>
+                    </div>
+                </div>
+            </div>
+            <div class="shop">
+                <div class="container">
+                    <div class="img-wraper">
+                        <img src="/images/vertical-guitar.png" alt="vertical guitar">
+                    </div>
+                    <!-- FORM -->
+                    <div class="order">
+                        <form class="form">
+                            <fieldset>
+                                <legend class="h1 legend-text">Оформление предзаказа</legend>
+                                <div class="wrap-all-form">
+                                    <div class="form-wraper"><label class="form-text" for="firstname">Ваше имя:</label>
+                                    <input type="text" id="firstname"></div>
+                                    <div class="form-wraper"><label class="form-text" for="surname">Ваша фамилия:</label>
+                                    <input type="text" id="surname"></div>
+                                    <div class="form-wraper"><label class="form-text" for="mail">Ваш e-mail:</label>
+                                    <input type="text" id="mail"></div>
+                                    <div class="form-wraper"><label class="form-text" for="tel">Ваш телефон:</label>
+                                    <input type="text" id="tel"></div>
+                                    <div class="form-textarea"><label class="form-text" for="coment">Примечания:</label>
+                                    <textarea name="" id="coment" cols="38" rows="6"></textarea></div>
+                                    <div class="mod"><input class="btn" type="submit" value="Заказать"></div> 
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
             <div class="container">
-                <div class="img-wraper">
-                    <img src="/images/vertical-guitar.png" alt="vertical guitar">
+             <div class="raw">
+                 <div class="col">
+                     <a class="col-text col-text-mod" href="#">Гитары</a>
+                     <a class="col-text col-text-mod" href="#">Электрогитары</a>
+                     <a class="col-text col-text-mod" href="#">Бас гитары</a>
+                     <a class="col-text col-text-mod" href="#">Акустические гитары</a>
+                     <a class="col-text col-text-mod" href="#">Акустические бас гитары</a>
+                     <a class="col-text col-text-mod" href="#">Именные гитары</a>
+                     <a class="col-text col-text-mod" href="#">Эксклюзивные</a>
+                 </div>
+                 <div class="col">
+                    <a class="col-text col-text-mod" href="#">Педали эффектов</a>
+                    <a class="col-text col-text-mod" href="#">Wah pedals</a>
+                    <a class="col-text col-text-mod" href="#">Classic</a>
+                    <a class="col-text col-text-mod" href="#">Tube King</a>
+                    <a class="col-text col-text-mod" href="#">Jemini</a>
+                    <a class="col-text col-text-mod" href="#">Airplane Flanger</a>
+                    <a class="col-text col-text-mod" href="#">Tone Lock</a>
+                    <a class="col-text col-text-mod" href="#">9 Series</a>
                 </div>
-                <!-- FORM -->
-                <div class="order">
-                    <form class="form">
-                        <fieldset>
-                            <legend class="h1 legend-text">Оформление предзаказа</legend>
-                            <div class="wrap-all-form">
-                                <div class="form-wraper"><label class="form-text" for="firstname">Ваше имя:</label>
-                                <input type="text" id="firstname"></div>
-                                <div class="form-wraper"><label class="form-text" for="surname">Ваша фамилия:</label>
-                                <input type="text" id="sirname"></div>
-                                <div class="form-wraper"><label class="form-text" for="mail">Ваш e-mail:</label>
-                                <input type="text" id="mail"></div>
-                                <div class="form-wraper"><label class="form-text" for="tel">Ваш телефон:</label>
-                                <input type="text" id="tel"></div>
-                                <div class="form-textarea"><label class="form-text" for="coment">Примечания:</label>
-                                <textarea name="" id="coment" cols="38" rows="6"></textarea></div>
-                                <div class="mod"><input class="btn" type="submit" value="Заказать"></div> 
-                            </div>
-                        </fieldset>
-                    </form>
+                <div class="col">
+                    <a class="col-text col-text-mod" href="#">Усилители</a>
+                    <p class="col-text col-text-mod">Гитарное усиление:</p>
+                    <a class="col-text col-text-mod" href="#">TSA</a>
+                    <a class="col-text col-text-mod" href="#">Troubadour</a>
+                    <a class="col-text col-text-mod" href="#">TBX</a>
+                    <a class="col-text col-text-mod" href="#">MIMX</a>
+                    <a class="col-text col-text-mod" href="#">IBZ</a>
+                    <p class="col-text col-text-mod">Бас-гитарное усиление:</p>
+                    <a class="col-text col-text-mod" href="#">Promethean</a>
+                    <a class="col-text col-text-mod" href="#">SW</a>
+                </div>
+                <div class="col">
+                    <a class="col-text col-text-mod" href="#">Аксессуары</a>
+                    <a class="col-text col-text-mod" href="#">Настольные комбо</a>
+                    <a class="col-text col-text-mod" href="#">Адаптеры и кабели</a>
+                    <a class="col-text col-text-mod" href="#">Тюнеры</a>
+                    <a class="col-text col-text-mod" href="#">Кейсы</a>
+                    <a class="col-text col-text-mod" href="#">Чехлы</a>
+                    <a class="col-text col-text-mod" href="#">Ремни</a>
+                    <a class="col-text col-text-mod" href="#">Медиаторы</a>
+                </div>
+              </div>
+              <div class="end-of-footer">
+                <div class="logo">
+                    <strong>
+                        <a href="#"><img src="/images/IbanezLogo.png" alt="Ibanez"></a>
+                    </strong>
+                </div>
+                <p class="col-text col-text-mod">2010 – 2015 © Ibanez guitars.
+                     Все права защищены.</p>
+                <div class="socials">
+                    <a class="icon-facebook" href="#"></a>
+                    <a class="icon-vk1" href="#"></a>
+                    <a class="icon-twitter" href="#"></a>
+                    <a class="icon-youtube" href="#"></a>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-         <div class="raw">
-             <div class="col">
-                 <a class="col-text col-text-mod" href="#">Гитары</a>
-                 <a class="col-text col-text-mod" href="#">Электрогитары</a>
-                 <a class="col-text col-text-mod" href="#">Бас гитары</a>
-                 <a class="col-text col-text-mod" href="#">Акустические гитары</a>
-                 <a class="col-text col-text-mod" href="#">Акустические бас гитары</a>
-                 <a class="col-text col-text-mod" href="#">Именные гитары</a>
-                 <a class="col-text col-text-mod" href="#">Эксклюзивные</a>
-             </div>
-             <div class="col">
-                <a class="col-text col-text-mod" href="#">Педали эффектов</a>
-                <a class="col-text col-text-mod" href="#">Wah pedals</a>
-                <a class="col-text col-text-mod" href="#">Classic</a>
-                <a class="col-text col-text-mod" href="#">Tube King</a>
-                <a class="col-text col-text-mod" href="#">Jemini</a>
-                <a class="col-text col-text-mod" href="#">Airplane Flanger</a>
-                <a class="col-text col-text-mod" href="#">Tone Lock</a>
-                <a class="col-text col-text-mod" href="#">9 Series</a>
             </div>
-            <div class="col">
-                <a class="col-text col-text-mod" href="#">Усилители</a>
-                <p class="col-text col-text-mod">Гитарное усиление:</p>
-                <a class="col-text col-text-mod" href="#">TSA</a>
-                <a class="col-text col-text-mod" href="#">Troubadour</a>
-                <a class="col-text col-text-mod" href="#">TBX</a>
-                <a class="col-text col-text-mod" href="#">MIMX</a>
-                <a class="col-text col-text-mod" href="#">IBZ</a>
-                <p class="col-text col-text-mod">Бас-гитарное усиление:</p>
-                <a class="col-text col-text-mod" href="#">Promethean</a>
-                <a class="col-text col-text-mod" href="#">SW</a>
-            </div>
-            <div class="col">
-                <a class="col-text col-text-mod" href="#">Аксессуары</a>
-                <a class="col-text col-text-mod" href="#">Настольные комбо</a>
-                <a class="col-text col-text-mod" href="#">Адаптеры и кабели</a>
-                <a class="col-text col-text-mod" href="#">Тюнеры</a>
-                <a class="col-text col-text-mod" href="#">Кейсы</a>
-                <a class="col-text col-text-mod" href="#">Чехлы</a>
-                <a class="col-text col-text-mod" href="#">Ремни</a>
-                <a class="col-text col-text-mod" href="#">Медиаторы</a>
-            </div>
-          </div>
-          <div class="end-of-footer">
-            <div class="logo">
-                <strong>
-                    <a href="#"><img src="/images/IbanezLogo.png" alt="Ibanez"></a>
-                </strong>
-            </div>
-            <p class="col-text col-text-mod">2010 – 2015 © Ibanez guitars.
-                 Все права защищены.</p>
-            <div class="socials">
-                <a class="icon-facebook" href="#"></a>
-                <a class="icon-vk1" href="#"></a>
-                <a class="icon-twitter" href="#"></a>
-                <a class="icon-youtube" href="#"></a>
-            </div>
-        </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

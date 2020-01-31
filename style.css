@@ -70,6 +70,10 @@ ul {
     margin: 0;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 /******************RESET***************/
 .header {
     width: 100%;
@@ -104,6 +108,7 @@ ul {
     font-size: 16px;
     font-weight: 400;
     color: #cccc00;
+    transition: 0.5s;
 }
 
 .nav a:after {
@@ -115,6 +120,7 @@ ul {
     border-width: 6px 3px 0 3px;
     border-color: #cccc00 transparent transparent transparent;
     margin-left: 4px;
+    transition: 0.5s;
 }
 
 .nav a:hover {
@@ -187,9 +193,11 @@ ul {
     font-weight: 100;
     background-color: #ffff00;
     padding: 30px;
+    transition: 0.7s;
 }
 .btn:hover {
-    background-color: #cccccc;
+    background-color: white;
+    transition: 0.5s;
 }
 
 /************END TISER**************/
@@ -266,7 +274,7 @@ ul {
     background-color: yellow;
     border-radius: 100%;
     box-shadow: 0px 0px 0px 2px #c5c5c4;
-    position: relative;
+
 }
 
 .yellow-item:hover {
@@ -281,8 +289,8 @@ ul {
 }
 
 .item-positioner-1 {
-    top: 92px;
-    left: 106px;
+    top: 38%;
+    left: 14%;
 }
 
 .item-guitar .about {
@@ -310,8 +318,8 @@ ul {
 }
 
 .text-positioner-1 {
-    top: -25px;
-    left: 185px;
+    top: -9%;
+    left: 24%;
 }
 
 .item-positioner-1:hover+.text-positioner-1{
@@ -319,13 +327,13 @@ ul {
 }
 
 .item-positioner-2 {
-    top: 50px;
-    left: 200px;
+    top: 20%;
+    left: 25%;
 }
 
 .text-positioner-2 {
-    top: -67px;
-    left: 278px;
+    top: -27%;
+    left: 35%;
 }
 
 .item-positioner-2:hover+.text-positioner-2{
@@ -333,13 +341,13 @@ ul {
 }
 
 .item-positioner-3 {
-    top: 117px;
-    left: 209px;
+    top: 48%;
+    left: 26.8%;
 }
 
 .text-positioner-3 {
-    top: 2px;
-    left: 288px;
+    top: 1%;
+    left: 37%;
 }
 
 .item-positioner-3:hover+.text-positioner-3{
@@ -347,13 +355,13 @@ ul {
 }
 
 .item-positioner-4 {
-    top: 117px;
-    left: 411px;
+    top: 48%;
+    left: 53%;
 }
 
 .text-positioner-4 {
-    top: 2px;
-    left: 490px;
+    top: 1%;
+    left: 63%;
 }
 
 .item-positioner-4:hover+.text-positioner-4{
@@ -361,13 +369,13 @@ ul {
 }
 
 .item-positioner-5 {
-    top: 114px;
-    left: 703px;
+    top: 47%;
+    left: 90%;
 }
 
 .text-positioner-5 {
-    top: -9px;
-    left: 783px;
+    top: -1%;
+    left: 100%;
     white-space: nowrap;
 }
 
@@ -488,11 +496,10 @@ ul {
     max-width: 460px;
     display: flex;
     justify-content: space-between;
-    align-items: top; 
 }
 
 textarea  {
-    margin: 10px 10px 15px 0;
+    margin: 10px 2px 15px 0;
     resize: none;   
 }
 
@@ -507,6 +514,10 @@ textarea  {
     padding: 16px 20px;
     border: none;
     margin-right: 10px;   
+}
+.mod .btn:hover {
+    background-color: black;
+    color: white;
 }
 
 /***************END SHOP*************/
@@ -523,10 +534,12 @@ footer .container {
     display: block;
     text-align: left;
     text-decoration: underline;
+    transition: 0.3s; 
 }
 
 .raw .col a:hover {
-    color: #cccc00; 
+    color: #cccc00;
+    transition: 0.4s; 
 }
 
 .raw .col a:nth-child(1) {
@@ -608,11 +621,282 @@ footer .container {
 .icon-youtube:hover:before {
     color: #ff0000;
 }
+/***********************************************/
+.btn-open {
+    display: none;
+}
+
+/*****************END FOOTER*****************/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .h1, .h2 {
+        font-size: 40px;
+    }
+    .header {
+        border-bottom: 1px solid grey;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .container-header {
+        justify-content: space-around;
+    }
+
+    .tiser {
+        background: black url(/images/big-guitar.png)
+        no-repeat 65% -26%;
+        padding-top: 40px;
+    }
+
+    .tiser .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .tiser .container img {
+        display: none;
+    }
+
+    .tiser .container .h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .container .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 45%;
+    }
+
+    .content :nth-child(1n+2) {
+        margin: 0;
+    }
+    /********************header&tiser END******************/
+    .info-block .container {
+        padding: 20px;
+    }
+
+    .info-block .container .h1 {
+        margin: 20px auto 0 auto;
+        font-size: 40px
+    }
+
+    .info-block .container .video {
+        margin: 60px auto 0 auto;
+    }
+
+    .info-block .container .about {
+        padding: 5px 5px;
+        margin: 28px 0px 0px 0px;
+    }
+
+    /* **************info-block end********** */
+
+    .view-product .container {
+        padding: 20px;
+    }
+    
+    .view-product .container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .view-product .text-md {
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    .view-product .h1 {
+      text-align: center;  
+    }
+/*******************view-pruduct end*****************/
+    .artists .container {
+        padding: 20px;
+    }
+
+    .artists .container .raw {
+        flex-wrap: wrap;
+    }
+
+    .artists .container .raw .col {
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 10px;
+    }
+
+    /*******************artists end*****************/
+    .shop .container {
+        padding: 20px;
+    }
+
+    .form-wraper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: none;
+    }
+
+    .form-wraper input {
+        margin: 5px 0;
+    }
+
+    .form-text {
+        line-height: 18px;
+    }
+
+    .form-textarea {
+        flex-direction: column; 
+    }
+
+
+    /**********************shop end**********************/
+    footer .container {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .h1, .h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        border-bottom: 1px solid gray;
+    }
+
+    .container-header {
+        justify-content: flex-start;
+        padding: 15px;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .switch {
+        display: none;
+    }
+
+    .nav li {
+        display: block;
+        margin-bottom: 10px;  
+    }
+
+    .nav li:last-child {
+        margin: 0;
+    }
+
+    .btn-open {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        height: 30px;
+        width: 30px;
+        background-color: yellow;
+    }
+
+    .btn-open:focus+.container-header {   /*бро, я знаю что поступил плохо*/
+        display: block;
+    }
+    /* *****************header end******************* */
+    .tiser {
+        background: black url(/images/big-guitar.png)
+        no-repeat 10% 0%;
+        padding-top: 40px;
+    }
+
+    .tiser .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .content {
+        width: auto;
+        min-height: auto;
+    }
+
+    .content img {
+        display: none;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+
+    /* *************tiser end********************* */
+
+    .info-block .container {
+        align-items: center;
+        justify-content: space-around;
+    }
+    /* *********************info-block end*************** */
+    .view-product .container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .view-product .text-md {
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    .view-product .h1 {
+      text-align: center;  
+    }
+    /* *****************view-product end**************** */
+    .artists .raw {
+        flex-direction: column;
+    }
+    .artists .col {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .artists .col:last-child {
+        margin: 0;
+    }
+    /* *****************artists end**************** */
+    .legend-text {
+        text-align: center;
+    }
+    
+    .shop .img-wraper {
+        display: none;
+    }
+
+    .form-wraper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: none;
+    }
+    
+    .form-wraper input {
+        margin: 5px 0;
+        }
+    
+    .form-text {
+        line-height: 18px;
+        }
+    
+    .form-textarea {
+        flex-direction: column; 
+        }
+}
 
 
 
-
-
-
-
-  
